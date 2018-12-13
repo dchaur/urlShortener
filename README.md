@@ -61,7 +61,7 @@ To test API there is a Vue.js + Bootstrap project inside frontend folder. Check 
 ```
 controllers
 components
- URLShortener
+ - URLShortener
 APIService.js
 ```
 
@@ -75,6 +75,10 @@ POST http://localhost:8000/api/create/url/
 	"shortBaseUrl":"the path to resolve the short URL"
 }
 ```
+
+## To-Do
+
+Test and run docker to check if docker image will run properly URL shortener APP
 
 ## Built With
 
