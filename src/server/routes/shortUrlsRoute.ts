@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from "express";
-import { shortUrlController } from "../../controllers/shortUrlsController";
+import { ShortUrlController } from "../../controllers/shortUrlsController";
 
-export class shortenerUrlRoutes {
-  public shortUrlsController: shortUrlController = new shortUrlController();
+export class ShortenerUrlRoutes {
+  public shortUrlsController: ShortUrlController = new ShortUrlController();
   public routes(app): void {
     app.route("/").get((req: Request, res: Response) => {
       res.status(200).send({

@@ -6,7 +6,7 @@ import shortid = require("shortid");
 
 const ShortURLModel = mongoose.model("shortUrl", tblShorUrlsSchema);
 
-export class shortUrlController {
+export class ShortUrlController {
   /**
    *
    * @param req
@@ -46,7 +46,7 @@ export class shortUrlController {
         if (urlItem) {
           res.status(200).json(urlItem);
         } else {
-          let shortUrl = `${shortBaseUrl}/${urlCode}`;
+          const shortUrl = `${shortBaseUrl}/${urlCode}`;
           const newUrl = new ShortURLModel({
             baseUrl,
             shortUrl,

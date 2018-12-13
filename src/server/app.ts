@@ -1,11 +1,11 @@
 import * as express from "express";
 import * as bodyParser from "body-parser";
 import * as mongoose from "mongoose";
-import { shortenerUrlRoutes } from "./routes/shortUrlsRoute";
+import { ShortenerUrlRoutes } from "./routes/shortUrlsRoute";
 
 class App {
   public app: express.Application;
-  public shortenerRoutes: shortenerUrlRoutes = new shortenerUrlRoutes();
+  public shortenerRoutes: ShortenerUrlRoutes = new ShortenerUrlRoutes();
   public mongoUrl: string = "mongodb://localhost/urlShortener";
   public mongoConnectOptions = {
     keepAlive: true,
@@ -31,7 +31,7 @@ class App {
         "Access-Control-Allow-Headers",
         "Content-type,Accept,x-access-token,X-Key"
       );
-      if (req.method == "OPTIONS") {
+      if (req.method === "OPTIONS") {
         res.status(200).end();
       } else {
         next();
