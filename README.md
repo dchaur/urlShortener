@@ -78,9 +78,9 @@ POST http://localhost:8000/api/create/url/
 
 ## Built With
 
-- [Vue.js](hhttps://vuejs.org/) - The web framework used
-- [Yarn](hhttps://yarnpkg.com/en/) - Dependency Management
-- [Valid URL](hhttps://www.npmjs.com/package/valid-url) - URI validation
+- [Vue.js](https://vuejs.org/) - The web framework used
+- [Yarn](https://github.com/yarnpkg/yarn) - Dependency Management
+- [Valid URL](https://github.com/ogt/valid-url) - URI validation
 - [Short ID](https://github.com/dylang/shortid) - Creation of short non-sequential url-friendly unique ids
 
 ## Authors
